@@ -33,7 +33,7 @@ export default {
   methods: {
     login () {
       if (this.form.name === this.nameList.name && this.form.password === this.nameList.password) {
-        console.log('正确')
+        this.$router.push('./home')
       } else {
         console.log('重新登录')
       }
@@ -52,7 +52,7 @@ export default {
     position: relative;
   }
   .manage_login_content {
-    width: 400px;
+    width: 350px;
     height: 200px;
     background: #fff;
     position: absolute;
@@ -63,7 +63,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-    padding: 0 50px;
+    padding: 0 20px;
     border-radius: 10px;
   }
 </style>
